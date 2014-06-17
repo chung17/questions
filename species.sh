@@ -2,6 +2,8 @@
 #kingdom, phylum class, order, genus, species
 for filename in $*
 do
+	echo '////////////////'
 	echo $filename
-	cut -d',' -f2 $filename | sort | uniq
+	echo '//////'
+	cut -d',' -f2	$filename | sort | uniq
 done
